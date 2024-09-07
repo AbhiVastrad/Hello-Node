@@ -17,10 +17,18 @@ Ensure you have the following installed before you begin:
 
 ```bash
 git clone https://github.com/AbhiVastrad/Hello-node.git
-cd hello-node
+cd Hello-node
 ```
 
-### 2. Build Docker Image
+### 2.Dependency Installation
+
+```bash
+npm start
+```
+
+It installs all the necessary packages and libraries listed in the package.json. This ensures that your project has everything it needs to run properly.
+
+### 3. Build Docker Image
 
 Ensure you have Docker running and build the Docker image:
 
@@ -28,7 +36,7 @@ Ensure you have Docker running and build the Docker image:
 docker build -t your-dockerhub-username/Hello-node:latest .
 ```
 
-### 3. Push the Image to Docker Hub
+### 4. Push the Image to Docker Hub
 
 ```bash
 docker push your-dockerhub-username/Hello-node:latest
@@ -55,8 +63,6 @@ kubectl apply -f kubernetes/service.yaml
 ```
 
 ### 3. Set Up Horizontal Pod Autoscaling (HPA)
-
-Enable autoscaling based on CPU utilization:
 
 ```bash
 kubectl apply -f kubernetes/hpa.yaml
@@ -97,4 +103,6 @@ This will display real-time scaling of the pods.
 
 ## Screencast and Screenshots
 
-### Screencast:
+### Screencast: https://drive.google.com/drive/folders/1vvRWC2-PI1EoKU3lczPPMjFjxXGyAm4z?usp=sharing
+
+By following the steps outlined in this document, you should be able to successfully deploy, scale, and monitor a Node.js application on Kubernetes.
