@@ -107,4 +107,4 @@ This will display real-time scaling of the pods.
 
 
 
-###By following the steps outlined in this document, you should be able to successfully deploy, scale, and monitor a Node.js application on Kubernetes.
+### By following the steps outlined in this document, you should be able to successfully deploy, scale, and monitor a Node.js application on Kubernetes.
